@@ -11,9 +11,9 @@
 		531044B394269273BE0B7C598F77D411 /* Pods-BlinkingLabel_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 51A54FBF726A4D2BD02C869578EE0C6E /* Pods-BlinkingLabel_Example-dummy.m */; };
 		651EBB88E916918A8E6A25D2D1DAD399 /* Pods-BlinkingLabel_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 8E74E12A391797F1093EDAA701301C36 /* Pods-BlinkingLabel_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		798D128A15A62827CD5D0D18D5D374F8 /* Pods-BlinkingLabel_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 41827B58C5E22C460D587505CB0508B0 /* Pods-BlinkingLabel_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		7C7FCEAF5D445D8EA0FDAD3924E6E4BF /* ReplaceMe.swift in Sources */ = {isa = PBXBuildFile; fileRef = B233703FEDD0BE683C366F0DDE5FF322 /* ReplaceMe.swift */; };
 		882FD0FE75D7BE721AF1B8E2EA58D24B /* BlinkingLabel-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = A6D08E8BE1F90E057FA7CA3742D43DC6 /* BlinkingLabel-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		AE369700D3D175ECB0A0E4CC4ABEA97A /* Pods-BlinkingLabel_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 23C715FC5FE185B6B2B462F5C2FB0149 /* Pods-BlinkingLabel_Tests-dummy.m */; };
+		B0D47A2A27B507BC00BEF795 /* BlinkingLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0D47A2927B507BC00BEF795 /* BlinkingLabel.swift */; };
 		C67714FC4CDB3189218F079A171CC4BE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
 		CF7460737B6DEC343E6BA67752B4CA9E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
 		EC5A2D56572453D73A306EBB8C08BA7A /* BlinkingLabel-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 3528312938F86B0E4457C5D997C7ED65 /* BlinkingLabel-dummy.m */; };
@@ -65,7 +65,7 @@
 		A6D08E8BE1F90E057FA7CA3742D43DC6 /* BlinkingLabel-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "BlinkingLabel-umbrella.h"; sourceTree = "<group>"; };
 		A6EE717B8F0F0B6FEDD7486B29499C01 /* Pods_BlinkingLabel_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BlinkingLabel_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		AC9E688615B9826135D8B93AF23C2F46 /* Pods-BlinkingLabel_Tests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-BlinkingLabel_Tests-Info.plist"; sourceTree = "<group>"; };
-		B233703FEDD0BE683C366F0DDE5FF322 /* ReplaceMe.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ReplaceMe.swift; path = BlinkingLabel/Classes/ReplaceMe.swift; sourceTree = "<group>"; };
+		B0D47A2927B507BC00BEF795 /* BlinkingLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlinkingLabel.swift; sourceTree = "<group>"; };
 		BE33F976E3C133D47B053E3BE0BAFD39 /* Pods-BlinkingLabel_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-BlinkingLabel_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
 		D3F2B759FF797FC6D16C40DB07D03BA9 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		E2C43445B8E0037F7D3AD88BF900533A /* Pods-BlinkingLabel_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-BlinkingLabel_Example.debug.xcconfig"; sourceTree = "<group>"; };
@@ -155,9 +155,9 @@
 		CAE5D5A7DAB860E3C0B0AD6393918BB9 /* BlinkingLabel */ = {
 			isa = PBXGroup;
 			children = (
-				B233703FEDD0BE683C366F0DDE5FF322 /* ReplaceMe.swift */,
 				ABA9DE93DDCF37D09D424F86B9AC4436 /* Pod */,
 				D141A621791F9248B14997551CAAEA6F /* Support Files */,
+				B0D47A2927B507BC00BEF795 /* BlinkingLabel.swift */,
 			);
 			name = BlinkingLabel;
 			path = ../..;
@@ -317,6 +317,11 @@
 			attributes = {
 				LastSwiftUpdateCheck = 1240;
 				LastUpgradeCheck = 1240;
+				TargetAttributes = {
+					AA1774AB3B2C632E8037227600D6A676 = {
+						LastSwiftMigration = 1310;
+					};
+				};
 			};
 			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -375,8 +380,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B0D47A2A27B507BC00BEF795 /* BlinkingLabel.swift in Sources */,
 				EC5A2D56572453D73A306EBB8C08BA7A /* BlinkingLabel-dummy.m in Sources */,
-				7C7FCEAF5D445D8EA0FDAD3924E6E4BF /* ReplaceMe.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -410,6 +415,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 914D61B86A992D5DC329F118055F92DE /* BlinkingLabel.release.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
@@ -698,6 +704,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 00F1B0337FD9DFE041E64F5F7AD4E010 /* BlinkingLabel.debug.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
@@ -717,6 +724,7 @@
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
